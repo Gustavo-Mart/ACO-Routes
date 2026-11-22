@@ -1,0 +1,1160 @@
+{
+  "parametros": {
+    "ALFA": 1.0,
+    "BETA": 2.0,
+    "RHO": 0.1,
+    "Q": 100.0,
+    "TAU0": 1.0,
+    "NUM_FORMIGAS": 20,
+    "MAX_ITERACOES": 200,
+    "LIMITE_ESTAGNACAO": 50
+  },
+  "instancia": {
+    "semente": 44,
+    "num_clientes": 40,
+    "num_veiculos": 5,
+    "capacidade": 100,
+    "demanda_total": 421,
+    "velocidade_kmh": 30.0,
+    "tempo_servico_min": 10,
+    "clientes": [
+      {
+        "id": 1,
+        "x": 8.2,
+        "y": 10.8,
+        "demanda": 6,
+        "janela": "14:00-16:00"
+      },
+      {
+        "id": 2,
+        "x": 4.5,
+        "y": 0.6,
+        "demanda": 6,
+        "janela": "08:00-11:00"
+      },
+      {
+        "id": 3,
+        "x": 2.0,
+        "y": 15.5,
+        "demanda": 9,
+        "janela": "13:00-16:00"
+      },
+      {
+        "id": 4,
+        "x": 7.6,
+        "y": 8.1,
+        "demanda": 15,
+        "janela": "13:30-16:00"
+      },
+      {
+        "id": 5,
+        "x": 1.5,
+        "y": 16.8,
+        "demanda": 14,
+        "janela": "09:30-11:30"
+      },
+      {
+        "id": 6,
+        "x": 10.2,
+        "y": 11.8,
+        "demanda": 9,
+        "janela": "09:30-12:00"
+      },
+      {
+        "id": 7,
+        "x": 18.9,
+        "y": 16.4,
+        "demanda": 9,
+        "janela": "13:30-15:30"
+      },
+      {
+        "id": 8,
+        "x": 7.7,
+        "y": 9.5,
+        "demanda": 8,
+        "janela": "10:00-12:00"
+      },
+      {
+        "id": 9,
+        "x": 5.2,
+        "y": 5.0,
+        "demanda": 5,
+        "janela": "14:30-16:30"
+      },
+      {
+        "id": 10,
+        "x": 14.2,
+        "y": 14.8,
+        "demanda": 15,
+        "janela": "13:30-16:00"
+      },
+      {
+        "id": 11,
+        "x": 16.6,
+        "y": 12.6,
+        "demanda": 14,
+        "janela": "09:00-12:00"
+      },
+      {
+        "id": 12,
+        "x": 4.7,
+        "y": 9.1,
+        "demanda": 15,
+        "janela": "08:30-11:00"
+      },
+      {
+        "id": 13,
+        "x": 5.6,
+        "y": 0.2,
+        "demanda": 5,
+        "janela": "14:00-17:00"
+      },
+      {
+        "id": 14,
+        "x": 12.1,
+        "y": 11.1,
+        "demanda": 9,
+        "janela": "11:00-13:30"
+      },
+      {
+        "id": 15,
+        "x": 8.1,
+        "y": 7.2,
+        "demanda": 6,
+        "janela": "08:30-10:30"
+      },
+      {
+        "id": 16,
+        "x": 20.0,
+        "y": 15.2,
+        "demanda": 15,
+        "janela": "11:30-14:30"
+      },
+      {
+        "id": 17,
+        "x": 2.4,
+        "y": 3.6,
+        "demanda": 15,
+        "janela": "14:30-17:30"
+      },
+      {
+        "id": 18,
+        "x": 0.1,
+        "y": 13.0,
+        "demanda": 15,
+        "janela": "12:00-14:00"
+      },
+      {
+        "id": 19,
+        "x": 1.5,
+        "y": 8.7,
+        "demanda": 7,
+        "janela": "12:00-15:00"
+      },
+      {
+        "id": 20,
+        "x": 12.5,
+        "y": 3.9,
+        "demanda": 5,
+        "janela": "15:30-18:00"
+      },
+      {
+        "id": 21,
+        "x": 19.2,
+        "y": 5.3,
+        "demanda": 6,
+        "janela": "14:00-17:00"
+      },
+      {
+        "id": 22,
+        "x": 17.3,
+        "y": 12.0,
+        "demanda": 13,
+        "janela": "09:00-11:30"
+      },
+      {
+        "id": 23,
+        "x": 5.7,
+        "y": 6.0,
+        "demanda": 11,
+        "janela": "15:00-17:30"
+      },
+      {
+        "id": 24,
+        "x": 1.5,
+        "y": 5.0,
+        "demanda": 7,
+        "janela": "09:00-12:00"
+      },
+      {
+        "id": 25,
+        "x": 1.5,
+        "y": 8.8,
+        "demanda": 15,
+        "janela": "15:00-17:30"
+      },
+      {
+        "id": 26,
+        "x": 1.7,
+        "y": 18.0,
+        "demanda": 7,
+        "janela": "13:30-16:00"
+      },
+      {
+        "id": 27,
+        "x": 4.9,
+        "y": 14.0,
+        "demanda": 13,
+        "janela": "09:00-11:30"
+      },
+      {
+        "id": 28,
+        "x": 10.1,
+        "y": 17.3,
+        "demanda": 7,
+        "janela": "12:00-14:30"
+      },
+      {
+        "id": 29,
+        "x": 2.6,
+        "y": 18.5,
+        "demanda": 10,
+        "janela": "08:30-11:30"
+      },
+      {
+        "id": 30,
+        "x": 6.4,
+        "y": 6.5,
+        "demanda": 12,
+        "janela": "08:00-10:00"
+      },
+      {
+        "id": 31,
+        "x": 1.6,
+        "y": 18.2,
+        "demanda": 15,
+        "janela": "13:30-16:30"
+      },
+      {
+        "id": 32,
+        "x": 16.1,
+        "y": 7.6,
+        "demanda": 15,
+        "janela": "13:00-16:00"
+      },
+      {
+        "id": 33,
+        "x": 10.2,
+        "y": 4.4,
+        "demanda": 7,
+        "janela": "09:00-12:00"
+      },
+      {
+        "id": 34,
+        "x": 14.7,
+        "y": 0.1,
+        "demanda": 9,
+        "janela": "11:00-13:00"
+      },
+      {
+        "id": 35,
+        "x": 12.2,
+        "y": 3.3,
+        "demanda": 13,
+        "janela": "09:00-11:00"
+      },
+      {
+        "id": 36,
+        "x": 2.4,
+        "y": 7.8,
+        "demanda": 13,
+        "janela": "12:30-14:30"
+      },
+      {
+        "id": 37,
+        "x": 8.1,
+        "y": 5.6,
+        "demanda": 15,
+        "janela": "09:00-11:00"
+      },
+      {
+        "id": 38,
+        "x": 6.4,
+        "y": 11.9,
+        "demanda": 10,
+        "janela": "12:30-15:30"
+      },
+      {
+        "id": 39,
+        "x": 16.4,
+        "y": 0.3,
+        "demanda": 8,
+        "janela": "11:00-13:00"
+      },
+      {
+        "id": 40,
+        "x": 0.3,
+        "y": 1.5,
+        "demanda": 13,
+        "janela": "10:30-12:30"
+      }
+    ]
+  },
+  "gulosa": {
+    "distancia_km": 216.42629360274293,
+    "veiculos_usados": 5,
+    "espera_min": 1143.0683048931587,
+    "valida": true,
+    "rotas": [
+      [
+        6,
+        14,
+        1,
+        38,
+        4,
+        23,
+        9,
+        17,
+        13,
+        20,
+        21
+      ],
+      [
+        8,
+        15,
+        37,
+        33,
+        35,
+        34,
+        39,
+        32,
+        10
+      ],
+      [
+        30,
+        12,
+        36,
+        19,
+        25,
+        3,
+        26,
+        31
+      ],
+      [
+        27,
+        5,
+        29,
+        18,
+        28,
+        7,
+        16
+      ],
+      [
+        11,
+        22,
+        2,
+        40,
+        24
+      ]
+    ]
+  },
+  "execucoes": [
+    {
+      "semente": 1,
+      "distancia_km": 203.03043269115136,
+      "veiculos_usados": 5,
+      "espera_min": 1268.8912482676665,
+      "iteracoes": 84,
+      "segundos": 0.6670897006988525,
+      "valida": true,
+      "formigas_validas_pct": 31.428571428571427
+    },
+    {
+      "semente": 2,
+      "distancia_km": 199.3619199495247,
+      "veiculos_usados": 5,
+      "espera_min": 1285.6148708197354,
+      "iteracoes": 111,
+      "segundos": 0.9278144836425781,
+      "valida": true,
+      "formigas_validas_pct": 34.77477477477478
+    },
+    {
+      "semente": 3,
+      "distancia_km": 202.34055143124564,
+      "veiculos_usados": 5,
+      "espera_min": 1153.5463853966103,
+      "iteracoes": 72,
+      "segundos": 0.5682334899902344,
+      "valida": true,
+      "formigas_validas_pct": 31.38888888888889
+    },
+    {
+      "semente": 4,
+      "distancia_km": 201.84357504430872,
+      "veiculos_usados": 5,
+      "espera_min": 1287.753097827423,
+      "iteracoes": 189,
+      "segundos": 1.4995343685150146,
+      "valida": true,
+      "formigas_validas_pct": 34.36507936507937
+    },
+    {
+      "semente": 5,
+      "distancia_km": 209.6904389374416,
+      "veiculos_usados": 5,
+      "espera_min": 1279.9785870581197,
+      "iteracoes": 92,
+      "segundos": 0.7192301750183105,
+      "valida": true,
+      "formigas_validas_pct": 32.55434782608695
+    }
+  ],
+  "aco": {
+    "melhor_km": 199.3619199495247,
+    "media_km": 203.2533836107344,
+    "pior_km": 209.6904389374416,
+    "desvio_km": 3.8551815975393926,
+    "reducao_melhor_pct": 7.884612063144425,
+    "reducao_media_pct": 6.086557124241021,
+    "segundos_total": 4.38190221786499
+  },
+  "melhor": {
+    "semente": 2,
+    "distancia_km": 199.3619199495247,
+    "veiculos_usados": 5,
+    "espera_min": 1285.6148708197354,
+    "clientes_atendidos": 40,
+    "valida": true,
+    "violacoes": [],
+    "iteracoes": 111,
+    "historico": [
+      275.8678409497552,
+      275.8678409497552,
+      256.1903279054217,
+      256.1903279054217,
+      245.14393622667035,
+      245.14393622667035,
+      245.14393622667035,
+      245.14393622667035,
+      245.14393622667035,
+      245.14393622667035,
+      245.14393622667035,
+      245.14393622667035,
+      230.8118999683337,
+      230.8118999683337,
+      230.8118999683337,
+      230.8118999683337,
+      230.8118999683337,
+      225.16746535813166,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      203.51227283245674,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247,
+      199.3619199495247
+    ],
+    "validas_por_iteracao": [
+      2,
+      3,
+      4,
+      3,
+      2,
+      3,
+      6,
+      2,
+      6,
+      4,
+      5,
+      5,
+      5,
+      4,
+      8,
+      7,
+      9,
+      8,
+      8,
+      8,
+      5,
+      2,
+      5,
+      8,
+      7,
+      5,
+      6,
+      5,
+      8,
+      6,
+      3,
+      8,
+      10,
+      8,
+      7,
+      6,
+      4,
+      4,
+      10,
+      8,
+      7,
+      7,
+      9,
+      8,
+      8,
+      8,
+      6,
+      9,
+      8,
+      10,
+      11,
+      7,
+      9,
+      8,
+      7,
+      6,
+      5,
+      5,
+      6,
+      7,
+      9,
+      6,
+      9,
+      8,
+      6,
+      5,
+      9,
+      4,
+      11,
+      5,
+      6,
+      6,
+      10,
+      6,
+      10,
+      6,
+      13,
+      11,
+      10,
+      8,
+      3,
+      8,
+      11,
+      7,
+      10,
+      6,
+      8,
+      11,
+      8,
+      11,
+      9,
+      9,
+      8,
+      6,
+      11,
+      9,
+      6,
+      4,
+      5,
+      5,
+      10,
+      7,
+      7,
+      7,
+      7,
+      6,
+      4,
+      9,
+      13,
+      6,
+      5
+    ],
+    "veiculos": [
+      {
+        "numero": 1,
+        "entregas": 9,
+        "carga": 97,
+        "distancia_km": 34.45,
+        "espera_min": 248.1,
+        "retorno": "14:47",
+        "rota": [
+          6,
+          14,
+          22,
+          11,
+          16,
+          7,
+          10,
+          28,
+          1
+        ],
+        "paradas": [
+          {
+            "ordem": 1,
+            "cliente": 6,
+            "demanda": 9,
+            "janela": "09:30-12:00",
+            "chegada": "08:04",
+            "espera_min": 86.4,
+            "inicio_atendimento": "09:30",
+            "saida": "09:40"
+          },
+          {
+            "ordem": 2,
+            "cliente": 14,
+            "demanda": 9,
+            "janela": "11:00-13:30",
+            "chegada": "09:44",
+            "espera_min": 76.0,
+            "inicio_atendimento": "11:00",
+            "saida": "11:10"
+          },
+          {
+            "ordem": 3,
+            "cliente": 22,
+            "demanda": 13,
+            "janela": "09:00-11:30",
+            "chegada": "11:21",
+            "espera_min": 0.0,
+            "inicio_atendimento": "11:21",
+            "saida": "11:31"
+          },
+          {
+            "ordem": 4,
+            "cliente": 11,
+            "demanda": 14,
+            "janela": "09:00-12:00",
+            "chegada": "11:32",
+            "espera_min": 0.0,
+            "inicio_atendimento": "11:32",
+            "saida": "11:42"
+          },
+          {
+            "ordem": 5,
+            "cliente": 16,
+            "demanda": 15,
+            "janela": "11:30-14:30",
+            "chegada": "11:51",
+            "espera_min": 0.0,
+            "inicio_atendimento": "11:51",
+            "saida": "12:01"
+          },
+          {
+            "ordem": 6,
+            "cliente": 7,
+            "demanda": 9,
+            "janela": "13:30-15:30",
+            "chegada": "12:04",
+            "espera_min": 85.8,
+            "inicio_atendimento": "13:30",
+            "saida": "13:40"
+          },
+          {
+            "ordem": 7,
+            "cliente": 10,
+            "demanda": 15,
+            "janela": "13:30-16:00",
+            "chegada": "13:50",
+            "espera_min": 0.0,
+            "inicio_atendimento": "13:50",
+            "saida": "14:00"
+          },
+          {
+            "ordem": 8,
+            "cliente": 28,
+            "demanda": 7,
+            "janela": "12:00-14:30",
+            "chegada": "14:10",
+            "espera_min": 0.0,
+            "inicio_atendimento": "14:10",
+            "saida": "14:20"
+          },
+          {
+            "ordem": 9,
+            "cliente": 1,
+            "demanda": 6,
+            "janela": "14:00-16:00",
+            "chegada": "14:33",
+            "espera_min": 0.0,
+            "inicio_atendimento": "14:33",
+            "saida": "14:43"
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "entregas": 11,
+        "carga": 97,
+        "distancia_km": 49.09,
+        "espera_min": 290.5,
+        "retorno": "16:19",
+        "rota": [
+          8,
+          15,
+          37,
+          33,
+          35,
+          34,
+          39,
+          32,
+          21,
+          20,
+          9
+        ],
+        "paradas": [
+          {
+            "ordem": 1,
+            "cliente": 8,
+            "demanda": 8,
+            "janela": "10:00-12:00",
+            "chegada": "08:05",
+            "espera_min": 115.3,
+            "inicio_atendimento": "10:00",
+            "saida": "10:10"
+          },
+          {
+            "ordem": 2,
+            "cliente": 15,
+            "demanda": 6,
+            "janela": "08:30-10:30",
+            "chegada": "10:15",
+            "espera_min": 0.0,
+            "inicio_atendimento": "10:15",
+            "saida": "10:25"
+          },
+          {
+            "ordem": 3,
+            "cliente": 37,
+            "demanda": 15,
+            "janela": "09:00-11:00",
+            "chegada": "10:28",
+            "espera_min": 0.0,
+            "inicio_atendimento": "10:28",
+            "saida": "10:38"
+          },
+          {
+            "ordem": 4,
+            "cliente": 33,
+            "demanda": 7,
+            "janela": "09:00-12:00",
+            "chegada": "10:43",
+            "espera_min": 0.0,
+            "inicio_atendimento": "10:43",
+            "saida": "10:53"
+          },
+          {
+            "ordem": 5,
+            "cliente": 35,
+            "demanda": 13,
+            "janela": "09:00-11:00",
+            "chegada": "10:57",
+            "espera_min": 0.0,
+            "inicio_atendimento": "10:57",
+            "saida": "11:07"
+          },
+          {
+            "ordem": 6,
+            "cliente": 34,
+            "demanda": 9,
+            "janela": "11:00-13:00",
+            "chegada": "11:15",
+            "espera_min": 0.0,
+            "inicio_atendimento": "11:15",
+            "saida": "11:25"
+          },
+          {
+            "ordem": 7,
+            "cliente": 39,
+            "demanda": 8,
+            "janela": "11:00-13:00",
+            "chegada": "11:29",
+            "espera_min": 0.0,
+            "inicio_atendimento": "11:29",
+            "saida": "11:39"
+          },
+          {
+            "ordem": 8,
+            "cliente": 32,
+            "demanda": 15,
+            "janela": "13:00-16:00",
+            "chegada": "11:53",
+            "espera_min": 66.6,
+            "inicio_atendimento": "13:00",
+            "saida": "13:10"
+          },
+          {
+            "ordem": 9,
+            "cliente": 21,
+            "demanda": 6,
+            "janela": "14:00-17:00",
+            "chegada": "13:18",
+            "espera_min": 42.3,
+            "inicio_atendimento": "14:00",
+            "saida": "14:10"
+          },
+          {
+            "ordem": 10,
+            "cliente": 20,
+            "demanda": 5,
+            "janela": "15:30-18:00",
+            "chegada": "14:24",
+            "espera_min": 66.3,
+            "inicio_atendimento": "15:30",
+            "saida": "15:40"
+          },
+          {
+            "ordem": 11,
+            "cliente": 9,
+            "demanda": 5,
+            "janela": "14:30-16:30",
+            "chegada": "15:55",
+            "espera_min": 0.0,
+            "inicio_atendimento": "15:55",
+            "saida": "16:05"
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "entregas": 5,
+        "carga": 61,
+        "distancia_km": 32.75,
+        "espera_min": 398.2,
+        "retorno": "16:34",
+        "rota": [
+          4,
+          23,
+          17,
+          13,
+          25
+        ],
+        "paradas": [
+          {
+            "ordem": 1,
+            "cliente": 4,
+            "demanda": 15,
+            "janela": "13:30-16:00",
+            "chegada": "08:06",
+            "espera_min": 323.9,
+            "inicio_atendimento": "13:30",
+            "saida": "13:40"
+          },
+          {
+            "ordem": 2,
+            "cliente": 23,
+            "demanda": 11,
+            "janela": "15:00-17:30",
+            "chegada": "13:46",
+            "espera_min": 74.3,
+            "inicio_atendimento": "15:00",
+            "saida": "15:10"
+          },
+          {
+            "ordem": 3,
+            "cliente": 17,
+            "demanda": 15,
+            "janela": "14:30-17:30",
+            "chegada": "15:18",
+            "espera_min": 0.0,
+            "inicio_atendimento": "15:18",
+            "saida": "15:28"
+          },
+          {
+            "ordem": 4,
+            "cliente": 13,
+            "demanda": 5,
+            "janela": "14:00-17:00",
+            "chegada": "15:37",
+            "espera_min": 0.0,
+            "inicio_atendimento": "15:37",
+            "saida": "15:47"
+          },
+          {
+            "ordem": 5,
+            "cliente": 25,
+            "demanda": 15,
+            "janela": "15:00-17:30",
+            "chegada": "16:07",
+            "espera_min": 0.0,
+            "inicio_atendimento": "16:07",
+            "saida": "16:17"
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "entregas": 8,
+        "carga": 93,
+        "distancia_km": 34.18,
+        "espera_min": 228.5,
+        "retorno": "14:17",
+        "rota": [
+          30,
+          12,
+          36,
+          19,
+          18,
+          3,
+          26,
+          31
+        ],
+        "paradas": [
+          {
+            "ordem": 1,
+            "cliente": 30,
+            "demanda": 12,
+            "janela": "08:00-10:00",
+            "chegada": "08:10",
+            "espera_min": 0.0,
+            "inicio_atendimento": "08:10",
+            "saida": "08:20"
+          },
+          {
+            "ordem": 2,
+            "cliente": 12,
+            "demanda": 15,
+            "janela": "08:30-11:00",
+            "chegada": "08:26",
+            "espera_min": 3.7,
+            "inicio_atendimento": "08:30",
+            "saida": "08:40"
+          },
+          {
+            "ordem": 3,
+            "cliente": 36,
+            "demanda": 13,
+            "janela": "12:30-14:30",
+            "chegada": "08:45",
+            "espera_min": 224.7,
+            "inicio_atendimento": "12:30",
+            "saida": "12:40"
+          },
+          {
+            "ordem": 4,
+            "cliente": 19,
+            "demanda": 7,
+            "janela": "12:00-15:00",
+            "chegada": "12:43",
+            "espera_min": 0.0,
+            "inicio_atendimento": "12:43",
+            "saida": "12:53"
+          },
+          {
+            "ordem": 5,
+            "cliente": 18,
+            "demanda": 15,
+            "janela": "12:00-14:00",
+            "chegada": "13:02",
+            "espera_min": 0.0,
+            "inicio_atendimento": "13:02",
+            "saida": "13:12"
+          },
+          {
+            "ordem": 6,
+            "cliente": 3,
+            "demanda": 9,
+            "janela": "13:00-16:00",
+            "chegada": "13:18",
+            "espera_min": 0.0,
+            "inicio_atendimento": "13:18",
+            "saida": "13:28"
+          },
+          {
+            "ordem": 7,
+            "cliente": 26,
+            "demanda": 7,
+            "janela": "13:30-16:00",
+            "chegada": "13:33",
+            "espera_min": 0.0,
+            "inicio_atendimento": "13:33",
+            "saida": "13:43"
+          },
+          {
+            "ordem": 8,
+            "cliente": 31,
+            "demanda": 15,
+            "janela": "13:30-16:30",
+            "chegada": "13:43",
+            "espera_min": 0.0,
+            "inicio_atendimento": "13:43",
+            "saida": "13:53"
+          }
+        ]
+      },
+      {
+        "numero": 5,
+        "entregas": 7,
+        "carga": 73,
+        "distancia_km": 48.88,
+        "espera_min": 120.4,
+        "retorno": "12:48",
+        "rota": [
+          27,
+          29,
+          5,
+          24,
+          40,
+          2,
+          38
+        ],
+        "paradas": [
+          {
+            "ordem": 1,
+            "cliente": 27,
+            "demanda": 13,
+            "janela": "09:00-11:30",
+            "chegada": "08:13",
+            "espera_min": 47.0,
+            "inicio_atendimento": "09:00",
+            "saida": "09:10"
+          },
+          {
+            "ordem": 2,
+            "cliente": 29,
+            "demanda": 10,
+            "janela": "08:30-11:30",
+            "chegada": "09:20",
+            "espera_min": 0.0,
+            "inicio_atendimento": "09:20",
+            "saida": "09:30"
+          },
+          {
+            "ordem": 3,
+            "cliente": 5,
+            "demanda": 14,
+            "janela": "09:30-11:30",
+            "chegada": "09:34",
+            "espera_min": 0.0,
+            "inicio_atendimento": "09:34",
+            "saida": "09:44"
+          },
+          {
+            "ordem": 4,
+            "cliente": 24,
+            "demanda": 7,
+            "janela": "09:00-12:00",
+            "chegada": "10:08",
+            "espera_min": 0.0,
+            "inicio_atendimento": "10:08",
+            "saida": "10:18"
+          },
+          {
+            "ordem": 5,
+            "cliente": 40,
+            "demanda": 13,
+            "janela": "10:30-12:30",
+            "chegada": "10:25",
+            "espera_min": 4.8,
+            "inicio_atendimento": "10:30",
+            "saida": "10:40"
+          },
+          {
+            "ordem": 6,
+            "cliente": 2,
+            "demanda": 6,
+            "janela": "08:00-11:00",
+            "chegada": "10:49",
+            "espera_min": 0.0,
+            "inicio_atendimento": "10:49",
+            "saida": "10:59"
+          },
+          {
+            "ordem": 7,
+            "cliente": 38,
+            "demanda": 10,
+            "janela": "12:30-15:30",
+            "chegada": "11:22",
+            "espera_min": 68.5,
+            "inicio_atendimento": "12:30",
+            "saida": "12:40"
+          }
+        ]
+      }
+    ]
+  }
+}

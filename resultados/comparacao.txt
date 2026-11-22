@@ -1,0 +1,15 @@
+COMPARACAO: SOLUCAO GULOSA x ACO
+
+Solucao gulosa (vizinho mais proximo): 216.43 km, 5 veiculos
+
+ACO, uma execucao por semente:
+semente  distancia_km  veiculos  iteracoes  segundos  valida
+      1        203.03         5         84      0.67  sim
+      2        199.36         5        111      0.93  sim
+      3        202.34         5         72      0.57  sim
+      4        201.84         5        189      1.50  sim
+      5        209.69         5         92      0.72  sim
+
+Melhor: 199.36 km   Media: 203.25 km   Pior: 209.69 km   Desvio padrao: 3.86 km
+Reducao da melhor execucao em relacao a gulosa: 7.9%
+Reducao media em relacao a gulosa:              6.1%

@@ -1,0 +1,31 @@
+RESUMO DA MELHOR SOLUCAO ENCONTRADA PELO ACO
+
+Instancia: 40 clientes, 5 veiculos de capacidade 100, demanda total 421 (semente 44)
+Execucao escolhida: semente 2 (111 iteracoes)
+
+Distancia total:      199.36 km
+Veiculos usados:      5
+Clientes atendidos:   40 de 40
+Espera total:         1286 min
+Solucao valida:       sim
+
+Veiculo 1: 9 entregas, carga 97, 34.45 km, volta as 14:47
+  deposito -> 6 -> 14 -> 22 -> 11 -> 16 -> 7 -> 10 -> 28 -> 1 -> deposito
+Veiculo 2: 11 entregas, carga 97, 49.09 km, volta as 16:19
+  deposito -> 8 -> 15 -> 37 -> 33 -> 35 -> 34 -> 39 -> 32 -> 21 -> 20 -> 9 -> deposito
+Veiculo 3: 5 entregas, carga 61, 32.75 km, volta as 16:34
+  deposito -> 4 -> 23 -> 17 -> 13 -> 25 -> deposito
+Veiculo 4: 8 entregas, carga 93, 34.18 km, volta as 14:17
+  deposito -> 30 -> 12 -> 36 -> 19 -> 18 -> 3 -> 26 -> 31 -> deposito
+Veiculo 5: 7 entregas, carga 73, 48.88 km, volta as 12:48
+  deposito -> 27 -> 29 -> 5 -> 24 -> 40 -> 2 -> 38 -> deposito
+
+Parametros do ACO:
+  ALFA = 1.0
+  BETA = 2.0
+  RHO = 0.1
+  Q = 100.0
+  TAU0 = 1.0
+  NUM_FORMIGAS = 20
+  MAX_ITERACOES = 200
+  LIMITE_ESTAGNACAO = 50
